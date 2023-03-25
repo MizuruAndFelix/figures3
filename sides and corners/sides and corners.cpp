@@ -1,4 +1,4 @@
-﻿#include <fstream>
+#include <fstream>
 #include <iostream>
 #include <locale.h>
 #include <windows.h>
@@ -59,7 +59,7 @@ public:
     }
     void check()override
     {
-        if (aside == bside == cside && acorner == bcorner == ccorner)
+        if (aside == bside && aside == cside && acorner == bcorner && acorner == ccorner)
         {
             cout << "Правильная\n";
         }
@@ -136,7 +136,7 @@ public:
     }
     void check()override
     {
-        if (aside == bside == cside == dside && acorner == bcorner == ccorner == dcorner)
+        if (aside == bside && aside == cside && aside == dside && acorner == bcorner && acorner == ccorner && acorner == dcorner)
         {
             cout << "Правильная\n";
         }
